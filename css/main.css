@@ -175,7 +175,7 @@ body {
 }
 
 .zoom:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 1s;
 }
 
@@ -477,6 +477,10 @@ body {
     margin-bottom: 0;
   }
 }
+.no-key {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .main-sabores {
   display: flex;
   justify-content: center;
@@ -563,6 +567,7 @@ body {
   font-size: 1.2em;
   letter-spacing: -0.005em;
   line-height: 1em;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
