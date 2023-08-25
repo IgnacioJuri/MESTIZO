@@ -1,0 +1,199 @@
+//Eliminar cosas por defecto
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p,a,input,textarea{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $keyColor;
+}
+
+html{
+    background-color: $backgroundColor;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $backgroundColor;
+}
+
+// Colores 
+
+.mainColor{
+    color: $mainColor;
+}
+
+.redColor{
+    color: $RedColor;
+}
+
+.blueColor{
+    color: $BlueColor;
+}
+
+.greenColor{
+    color: $GreenColor;
+}
+
+.skyBlueColor{
+    color: $SkyBlueColor;
+}
+
+//botones 
+
+.ver-mas-btn{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $mainColor;
+    color: white;
+    border-color: transparent;
+}
+
+.ver-mas-btn-1{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $mainColor;
+    color: white;
+    border-color: transparent;
+}
+
+.ver-mas-btn-red{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $RedColor;
+    color: white;
+    border-color: transparent;
+}
+
+.ver-mas-btn-blue{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $BlueColor;
+    color: white;
+    border-color: transparent;
+}
+
+.ver-mas-btn-green{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $GreenColor;
+    color: white;
+    border-color: transparent;
+}
+
+.ver-mas-btn-skyBlue{
+    border-radius: 30px;
+    width: 9em;
+    height: 3em;
+    background-color: $SkyBlueColor;
+    color: white;
+    border-color: transparent;
+}
+
+// Btn Animations 
+
+//main ver mas btn
+.ver-mas-btn:hover{
+    background-color: black;
+    color: $mainColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn:not(:hover){
+    background-color: $mainColor;
+    color: white;
+    transition: all 1s;
+}
+
+//Main duplicado para la info
+
+.ver-mas-btn-1:hover{
+    background-color: black;
+    color: $mainColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn-1:not(:hover){
+    background-color: $mainColor;
+    color: white;
+    transition: all 1s;
+}
+
+//red ver mas btn
+.ver-mas-btn-red:hover{
+    background-color: black;
+    color: $RedColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn-red:not(:hover){
+    background-color: $RedColor;
+    color: white;
+    transition: all 1s;
+}
+
+//blue ver mas btn
+.ver-mas-btn-blue:hover{
+    background-color: black;
+    color: $BlueColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn-blue:not(:hover){
+    background-color: $BlueColor;
+    color: white;
+    transition: all 1s;
+}
+
+//green ver mas btn
+.ver-mas-btn-green:hover{
+    background-color: black;
+    color: $GreenColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn-green:not(:hover){
+    background-color: $GreenColor;
+    color: white;
+    transition: all 1s;
+}
+
+//skyBlue ver mas btn
+.ver-mas-btn-skyBlue:hover{
+    background-color: black;
+    color: $SkyBlueColor;
+    transition: all 1s;
+}
+
+.ver-mas-btn-skyBlue:not(:hover){
+    background-color: $SkyBlueColor;
+    color: white;
+    transition: all 1s;
+}
+
+// zoom animation 
+
+.zoom:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.zoom:not(hover){
+    transform: scale(1);
+    transition: all 1s;
+}
+

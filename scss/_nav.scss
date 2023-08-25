@@ -1,0 +1,85 @@
+// Style for NavBar
+
+.nav-header{
+    background-color: $navBackgroundColor;
+    overflow: hidden;
+    position: sticky; 
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    height: 5.5rem;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0rem;
+        padding-top: .75rem;
+        div{
+            font-family: $mainFont;
+            font-size: 1.5rem;
+            font-weight: lighter;
+            img{
+                width: 15rem;
+            }
+        }
+    }
+}
+
+.nav-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.disabled{
+    display: none;
+}
+
+.span-btn{
+    display: none;
+    color: $keyColor;
+    padding-bottom: 1rem;
+}
+
+
+//Breackpoint para la NavBar
+
+@media (max-width: 570px){
+    .span-btn{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    .nav-header{
+        position: sticky; 
+        height: auto;
+        top: 0;
+        nav{
+            justify-content: space-between;
+            margin-left: 1rem;
+        }
+    }
+}
+
+// Nav Animation
+
+.nav-link:hover{
+    a{
+       color: $mainColor;
+        transition: all 1s; 
+    }
+}
+
+.nav-link:not(:hover){
+    a{
+        color: $keyColor;
+        transition: all 1s;
+    }
+}
+
+
+

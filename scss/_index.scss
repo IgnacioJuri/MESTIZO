@@ -1,0 +1,165 @@
+// Index Style
+
+//Header style
+
+.main-header{
+    background-color: $backgroundColor;
+    margin: 0;
+    margin-top: -8rem;
+    video{
+        width: 100%;
+    }
+}
+
+// Main Style
+
+.main-body{
+    margin: 3rem;
+    margin-top: 0;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.product-container-reverse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    h1{
+        font-family: $mainFont;
+        font-size: 4.5em;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+    }
+    h2{
+        font-family: $mainFont;
+        font-size: 4.5em;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+    }
+    h3{
+        font-family: $secondaryFont;
+        font-size: 1.5em;
+        font-weight: 400;
+        
+    }
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+// Index Responsive
+
+@media (max-width: 570px){
+    .main-header{
+        display: none;
+    }
+
+    .product-container-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+    }
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// 438px BreackPoint
+
+@media (max-width: 438px){
+    .product-info{
+        h1{
+            font-size: 3.75rem;
+        }
+        h2{
+            font-size: 3.75rem;
+        }
+    }
+}
+
+
+// Img Animation 
+
+.img-2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    img{
+        opacity: 0%;
+        width: 70%;
+    }
+}
+
+.img-2:hover{
+    img{
+        opacity: 100%;
+        transition: all .5s;
+    }
+}
+
+.img-2:not(hover){
+    img{
+        opacity: 0%;
+        transition: all .5s;
+    }
+}
+
+// // // // // // // // 
+
+.img-4{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    img{
+        opacity: 0%;
+        width: 70%;
+    }
+}
+
+.img-4:hover{
+    img{
+        opacity: 100%;
+        transition: all .5s;
+    }
+}
+
+.img-4:not(hover){
+    img{
+        opacity: 0%;
+        transition: all .5s;
+    }
+}
+
+.hide{
+    opacity: 0%;
+    transition: all .5s;
+}
+
+.no-hide{
+    opacity: 100%;
+    transition: all .5s;
+}

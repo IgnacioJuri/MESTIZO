@@ -1,0 +1,134 @@
+
+.main-sabores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    section{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+        img{
+            width: 50%;
+        }
+    }
+}
+
+.subtitulo-sabores{
+    padding: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2{
+        font-family: $secondaryFont;
+        font-size: 1.2em;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+    }
+}
+
+.filtros-sabores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 1rem;
+    background-color: white;
+    p{
+        font-family: $mainFont;
+        font-size: 2em;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+    }
+}
+
+.filtros-sabores{
+    p:hover{
+        color: $mainColor;
+        transition: all 1s;
+        cursor: pointer;
+    }
+    p:not(hover){
+        transition: all 1s;
+    }
+}
+
+.productos-sabores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 1rem;
+    row-gap: 5rem;
+    padding: 3rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 90%;
+        }
+        h2{
+            font-family: $mainFont;
+            font-size: 1.2em;
+            letter-spacing: -0.005em;
+            line-height: 1em; 
+        }
+    }
+}
+
+// Responsive 
+
+
+@media (max-width: 700px){
+    .productos-sabores{
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr 1fr  1fr;
+        row-gap: 3rem;
+    }
+
+    .filtros-sabores{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 564px){
+    .main-sabores{
+        header{
+            margin-top: 0;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 464px){
+    .productos-sabores{
+        margin-bottom: 3rem;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr  1fr 1fr;
+        row-gap: 3rem;
+    }
+
+    .filtros-sabores{
+        p{
+            font-size: 1.5em;
+        }
+    }
+}
