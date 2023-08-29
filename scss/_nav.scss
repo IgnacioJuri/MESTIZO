@@ -70,6 +70,17 @@
     }
 }
 
+@media(max-width:350px){
+    .main-nav{
+        padding-top: 1rem;
+        div{
+            img{
+                width: 10rem;
+            }
+        }
+    }
+}
+
 // Nav Animation
 
 .nav-link:hover{
