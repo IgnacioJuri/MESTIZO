@@ -1,22 +1,17 @@
 // Style for NavBar
 
-.nav-header{
-    background-color: $navBackgroundColor;
-    overflow: hidden;
-    position: sticky; 
-    z-index: 5;
-    top: 0;
-    width: 100%;
-    height: 5.5rem;
-    nav{
+
+    .main-nav{
+        background-color: $navBackgroundColor;
+        overflow: hidden;
+        position: sticky; 
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        height: min-content;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 0rem;
-        padding-top: .75rem;
         div{
             font-family: $mainFont;
             font-size: 1.5rem;
@@ -26,12 +21,23 @@
             }
         }
     }
-}
+
 
 .nav-btn{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    z-index: 7;
+    position: fixed;
+    background-color: $navBackgroundColor;
+    width: 100%;
+    div{
+        a{
+            font-family: $mainFont;
+        }
+    }
 }
 
 .disabled{
@@ -60,7 +66,6 @@
         top: 0;
         nav{
             justify-content: space-between;
-            margin-left: 1rem;
         }
     }
 }

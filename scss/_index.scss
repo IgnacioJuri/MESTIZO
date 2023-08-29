@@ -35,6 +35,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
     h1{
         font-family: $mainFont;
         font-size: 4.5em;
@@ -51,7 +52,6 @@
         font-family: $secondaryFont;
         font-size: 1.5em;
         font-weight: 400;
-        
     }
 }
 
@@ -81,6 +81,35 @@
     .product-container{
         display: flex;
         flex-direction: column;
+    }
+
+    .product-info{
+        align-items: center;
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+    }
+
+    .product-img{
+        margin-top: 1.5rem;
+    }
+    
+    .img-2{
+        img{
+            display: none;
+        }
+    }
+
+    .img-4{
+        img{
+            display: none;
+        }
     }
 }
 

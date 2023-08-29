@@ -5,6 +5,7 @@
 const spanBtn = document.querySelector(".span-btn");
 const navLinkBtn = document.querySelectorAll(".nav-link-btn");
 
+
 // add event 
 
 spanBtn.addEventListener("click", () => {
