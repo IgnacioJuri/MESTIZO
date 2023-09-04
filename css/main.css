@@ -754,6 +754,10 @@ body {
   padding-right: 2rem;
   text-align: center;
 }
+.info-section div a {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
 .info-section div div {
   display: flex;
   flex-direction: row;
@@ -844,6 +848,7 @@ body {
   }
   .info-tit div h1 {
     text-align: start;
+    font-size: 6rem;
   }
   .info-tit div a {
     margin-top: 0rem;
@@ -861,7 +866,8 @@ body {
   }
   .info-tit div img {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    padding-top: 1rem;
   }
   .info-section {
     flex-direction: row;
@@ -895,13 +901,14 @@ body {
     display: block;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
     align-items: center;
     width: 100%;
   }
   .info-section div div p {
     font-family: "Outfit", sans-serif;
-    text-align: center;
     text-align: center;
     font-size: 1.5rem;
   }

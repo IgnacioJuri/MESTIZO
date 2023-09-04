@@ -57,6 +57,10 @@
             padding-right: 2rem;
             text-align: center;
         }
+        a{
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
         div{
             display: flex;
             flex-direction: row;
@@ -162,6 +166,7 @@
             padding-left: 5rem;
             h1{
                 text-align: start;
+                font-size: 6rem;
             }
             a{
                 margin-top: 0rem;
@@ -179,7 +184,8 @@
             width: 50%;
             img{
                 width: 100%;
-                max-width: 500px;
+                max-width: 600px;
+                padding-top: 1rem;
             }
         }
     }
@@ -214,12 +220,12 @@
                 display: block;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: start;
+                column-gap: 5rem;
                 align-items: center;
                 width: 100%;
                 p{
                     font-family: $mainFont;
-                    text-align: center;
                     text-align: center;
                     font-size: 1.5rem;
                 }
