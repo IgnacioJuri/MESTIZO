@@ -76,12 +76,12 @@ function producto (id,nombre,tipo,img,){
 };
 
 const productos = [
-  new producto("1","HUMMUS CLÁSICO","hummus","../img/sabores/Productos-02 (AMARILLO).svg"),
-  new producto("2","HUMMUS CON AJÍ PICANTE","hummus","../img/sabores/Productos-04.svg"),
-  new producto("3","HUMMUS CON AJO NEGRO","hummus","../img/sabores/Productos-01.svg"),
-  new producto("4","HUMMUS CON PISTACHO","hummus","../img/sabores/Productos-03.svg"),
-  new producto("5","TAHINI","tahini","../img/sabores/Productos-05.svg"),
-  new producto("6","GARBANZO SIN PIEL","garbanzo","../img/sabores/Productos-06.svg")
+  new producto("1","HUMMUS CLÁSICO","hummus","../img/sabores/Productos-02 (AMARILLO).webp"),
+  new producto("2","HUMMUS CON AJÍ PICANTE","hummus","../img/sabores/Productos-04.webp"),
+  new producto("3","HUMMUS CON AJO NEGRO","hummus","../img/sabores/Productos-01.webp"),
+  new producto("4","HUMMUS CON PISTACHO","hummus","../img/sabores/Productos-03.webp"),
+  new producto("5","TAHINI","tahini","../img/sabores/Productos-05.webp"),
+  new producto("6","GARBANZO SIN PIEL","garbanzo","../img/sabores/Productos-06.webp")
 ];
 
 // Llamados al Dom
@@ -147,4 +147,7 @@ filtroTahini.addEventListener("click", () =>{
   filtroGarbanzo.classList.remove("mainColor");
   filtroTahini.classList.add("mainColor");
 });
+
+// scroll top btn
+
 

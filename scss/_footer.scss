@@ -8,10 +8,6 @@
    display: grid;
    grid-template-columns:  1fr 1fr 1fr 1fr;
    grid-template-rows: 1fr;
-   // display: flex;
-   // justify-content: space-around;
-   // align-items: center;
-   // flex-wrap: wrap;
    a{
       display: flex;
       flex-direction: column;
@@ -103,6 +99,19 @@
 @media (max-width: 596px){
    .footer-top{
       background-size: 800vh;
+   }
+   .footer-bottom div:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 80%;
+      p{
+         font-family: $mainFont;
+         font-size: 1em;
+         font-weight: 200;
+         color: white;
+      }
    }
 }
 

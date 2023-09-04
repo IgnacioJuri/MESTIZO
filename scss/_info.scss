@@ -105,21 +105,6 @@
     }
 }
 
-.flecha{
-    position: fixed;
-    color: $mainColor;
-    right: 50px;
-    bottom: 30px;
-}
-
-.flecha:hover{
-    transform: translateY(-20px);
-    transition: all 1s;
-}
-
-.flecha:not(hover){
-    transition: 1s;
-}
 
 
 // Responsive
