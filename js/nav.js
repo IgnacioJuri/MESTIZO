@@ -68,18 +68,19 @@ img4.forEach(function(element) {
 
 // array de objetos y objetos. 
 
-function producto (id,nombre,tipo,img,){
+function producto (id,nombre,tipo,img, info){
   this.id = id;
   this.nombre = nombre;
   this.tipo = tipo;
   this.img = img;
+  this.info = info;
 };
 
 const productos = [
-  new producto("1","HUMMUS CLÁSICO","hummus","../img/sabores/Productos-02 (AMARILLO).webp"),
-  new producto("2","HUMMUS CON AJÍ PICANTE","hummus","../img/sabores/Productos-04.webp"),
-  new producto("3","HUMMUS CON AJO NEGRO","hummus","../img/sabores/Productos-01.webp"),
-  new producto("4","HUMMUS CON PISTACHO","hummus","../img/sabores/Productos-03.webp"),
+  new producto("1","HUMMUS CLÁSICO","hummus","../img/sabores/Productos-02 (AMARILLO).webp", "../pages/info_clasico.html#inicio",),
+  new producto("2","HUMMUS CON AJÍ PICANTE","hummus","../img/sabores/Productos-04.webp", "../pages/info_ajiPicante.html#inicio",),
+  new producto("3","HUMMUS CON AJO NEGRO","hummus","../img/sabores/Productos-01.webp", "../pages/info_ajoNegro.html#inicio"),
+  new producto("4","HUMMUS CON PISTACHO","hummus","../img/sabores/Productos-03.webp", "../pages/info_Pistacho.html#inicio"),
   new producto("5","TAHINI","tahini","../img/sabores/Productos-05.webp"),
   new producto("6","GARBANZO SIN PIEL","garbanzo","../img/sabores/Productos-06.webp")
 ];
@@ -102,8 +103,10 @@ function cargarProductos(productosAll) {
     const divProductContainer = document.createElement("div");
     divProductContainer.innerHTML = `
     <div>
-      <img class="zoom" src="${producto.img}">
-      <h2>${producto.nombre}</h2>
+      <a href="${producto.info}">
+        <img class="zoom" src="${producto.img}">
+        <h2>${producto.nombre}</h2>
+      </a>
     </div>
     `;
 
