@@ -55,6 +55,7 @@ body {
   background-color: rgb(248, 177, 57);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn-1 {
@@ -64,6 +65,7 @@ body {
   background-color: rgb(248, 177, 57);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn-red {
@@ -73,6 +75,7 @@ body {
   background-color: rgb(195, 58, 46);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn-blue {
@@ -82,6 +85,7 @@ body {
   background-color: rgb(100, 97, 165);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn-green {
@@ -91,6 +95,7 @@ body {
   background-color: rgb(84, 173, 114);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn-skyBlue {
@@ -100,6 +105,7 @@ body {
   background-color: rgb(0, 127, 197);
   color: white;
   border-color: transparent;
+  font-family: "Outfit", sans-serif;
 }
 
 .ver-mas-btn:hover {
@@ -193,8 +199,44 @@ body {
   transition: all 1s;
 }
 
+.Color-h-red:hover {
+  color: rgb(195, 58, 46);
+  transition: all 1s;
+}
+
+.Color-h:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-blue:hover {
+  color: rgb(100, 97, 165);
+  transition: all 1s;
+}
+
+.Color-h-blue:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-green:hover {
+  color: rgb(84, 173, 114);
+  transition: all 1s;
+}
+
+.Color-h-green:not(hover) {
+  transition: all 1s;
+}
+
 @media (max-width: 1000px) {
   .Color-h:hover {
+    color: black;
+  }
+  .Color-h-red:hover {
+    color: black;
+  }
+  .Color-h-blue:hover {
+    color: black;
+  }
+  .Color-h-green:hover {
     color: black;
   }
 }
@@ -350,14 +392,31 @@ body {
   width: 100%;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 1000px) {
+  .product-info {
+    gap: 1rem;
+  }
+  .product-info h1 {
+    font-size: 4rem;
+  }
+  .product-info h3 {
+    font-size: 1.25rem;
+  }
+  .product-container {
+    margin-bottom: 4rem;
+  }
+  .product-container-reverse {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 700px) {
   .main-header {
-    display: none;
+    display: block;
   }
   .product-container-reverse {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .product-container {
     display: flex;
@@ -367,9 +426,11 @@ body {
     align-items: center;
   }
   .product-info h1 {
+    font-size: 4.5rem;
     text-align: center;
   }
   .product-info h2 {
+    font-size: 4.5rem;
     text-align: center;
   }
   .product-info h3 {
@@ -378,10 +439,18 @@ body {
   .product-img {
     margin-top: 1.5rem;
   }
+  .product-img img {
+    max-width: 500px;
+  }
   .img-2 img {
     display: none;
   }
   .img-4 img {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .main-header {
     display: none;
   }
 }
@@ -777,7 +846,6 @@ body {
 
 .flecha {
   position: fixed;
-  color: rgb(248, 177, 57);
   right: 20px;
   bottom: 10px;
 }
@@ -848,7 +916,7 @@ body {
   }
   .info-tit div h1 {
     text-align: start;
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   .info-tit div a {
     margin-top: 0rem;

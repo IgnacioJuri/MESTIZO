@@ -77,15 +77,33 @@
 
 // Index Responsive
 
-@media (max-width: 570px){
+@media (max-width: 1000px){
+    .product-info{
+        gap: 1rem;
+        h1{
+            font-size: 4rem;
+        }
+        h3{
+            font-size: 1.25rem;
+        }
+    }
+    .product-container{
+        margin-bottom: 4rem;
+    }
+    .product-container-reverse{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 700px){ 
     .main-header{
-        display: none;
+        display: block;
     }
 
     .product-container-reverse{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .product-container{
@@ -96,9 +114,11 @@
     .product-info{
         align-items: center;
         h1{
+            font-size: 4.5rem;
             text-align: center;
         }
         h2{
+            font-size: 4.5rem;
             text-align: center;
         }
         h3{
@@ -108,6 +128,9 @@
 
     .product-img{
         margin-top: 1.5rem;
+        img{
+            max-width: 500px;
+        }
     }
     
     .img-2{
@@ -120,6 +143,12 @@
         img{
             display: none;
         }
+    }
+}
+
+@media (max-width:650px){
+    .main-header{
+        display: none;
     }
 }
 
