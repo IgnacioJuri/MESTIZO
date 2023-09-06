@@ -11,11 +11,8 @@
     }
 }
 
-.movile-heade{
-    background-color: $backgroundColor;
-    margin: 0;
-    margin-top: -8rem;
-    width: 100%;
+.header-mobile{
+    display: none;
     img{
         width: 100%;
     }
@@ -149,6 +146,10 @@
 @media (max-width:650px){
     .main-header{
         display: none;
+    }
+
+    .header-mobile{
+        display: block;
     }
 }
 

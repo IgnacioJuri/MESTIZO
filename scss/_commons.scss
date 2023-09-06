@@ -203,6 +203,13 @@ body{
     transition: all 1s;
 }
 
+@media (max-width: 1000px){
+    .zoom:hover{
+        transform: scale(1);
+        transition: all;
+    }
+}
+
 // Colore hoover
 
 .Color-h:hover{
